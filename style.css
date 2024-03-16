@@ -211,7 +211,7 @@ gap: 5%;
   }
   
   .banner-image {
-    background-image: url(images/z3.png)  ;
+    background-image: url(z3.png)  ;
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -306,7 +306,7 @@ gap: 5%;
 
   
   .banner-imagi {
-    background-image: url(images/z6.png)  ;
+    background-image: url(z6.png)  ;
     background-position: center;
     background-size: cover;
     height: 280px;
@@ -538,7 +538,7 @@ footer p{
         margin-top: 1%;
     }
     .la h1{
-        font-size: 58px;
+        font-size: 57px;
         color: antiquewhite;
     }
     .la h2{
