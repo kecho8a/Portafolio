@@ -12,8 +12,12 @@
 
 }
 body{
+  font-family: crimson, sans-serif;
     background: rgb(38,38,42);
     background: linear-gradient(90deg, rgb(24, 24, 27) 0%, rgba(18,18,36,1) 62%, rgba(5,0,0,1) 100%);
+    margin: 3% 3% 0% 3%;
+    width: 1300px;
+    height: auto;
 }
 
 
@@ -29,20 +33,15 @@ header{
 
 .la h1{
 font-size: 140px;
-color: white;
+color: rgb(245, 237, 237);
 }
 .la h2{
     color: yellow;
     font-size: 140px;
     
 }
-.la img{
-    width: 800px;
-    position: relative;
-    margin-top: -20%;
-    margin-left: -20%;
-    
-}
+
+
 .lb{
     height: 500px;
     margin: 1%;
@@ -53,6 +52,7 @@ color: white;
     border-radius: 20px;
     background-color: antiquewhite;
     box-shadow: 0 0 10px 3px rgba(15, 15, 12, 0.849);
+    margin-top: 10%;
    
 }
 
@@ -90,7 +90,8 @@ color: white;
     width: 100%;
     height: 100vh;
     padding: 10%;
-    margin-top: -15%;
+    margin: 2% auto;
+    
 }
 .about h2{
 font-size: 70px;
@@ -108,6 +109,7 @@ font-size: 70px;
     margin: 3%;
     height: 500px;
     padding: 3%;
+    
 }
 
 
@@ -133,7 +135,7 @@ font-size: 70px;
 }
 
 .lad{
-    color: white;
+    
     width: 40%;
     align-items: center;
     text-align: center;
@@ -143,12 +145,12 @@ font-size: 70px;
 .lad h2{
     padding: 5%;
     font-size: 70px;
-    color: antiquewhite;
+    color:  rgb(245, 237, 237);
 }
 .lad p{
     padding: 5%;
     font-size: 30px;
-    color: antiquewhite;
+    color:  rgb(245, 237, 237);
 
 }
 /*bloque de iconos*/
@@ -211,7 +213,7 @@ gap: 5%;
   }
   
   .banner-image {
-    background-image: url(z3.png)  ;
+    background-image: url(images/z3.png)  ;
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -306,7 +308,7 @@ gap: 5%;
 
   
   .banner-imagi {
-    background-image: url(z6.png)  ;
+    background-image: url(images/z6.png)  ;
     background-position: center;
     background-size: cover;
     height: 280px;
@@ -361,35 +363,7 @@ gap: 5%;
     color: #fff;
   }
   /*bloque project*/
-  .project{
-    
-    padding: 5%;
-    background-color: antiquewhite;
-  }
-  .pro1{
-    display: flex;
-    
-  }
-  .prob{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-  }
-  .prob img{
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 3px rgba(13, 14, 10, 0.849);
-  }
-  .proa{
-    color: black;
-    padding: 1%;
-  }
-  .proa h4{
-    font-size: 20px;
-    text-align: justify;
-    padding: 3%;
-  }
-
+ 
   .project2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -518,16 +492,75 @@ footer p{
 }
 
 
-  @media (max-width:480px) {
+
+  
+/*proyectos */
+
+.project-uno{
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-top: 2%;
+   display: grid;
+      grid-template-columns: 3.3fr 0.11fr 4fr;
+      grid-template-rows: 0.9fr 1fr 1fr;
+      gap: -2px -2px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "plantilla-1- plantilla-1- plant2"
+        "plantilla-1- plantilla-1- plant3"
+        "text-proj text-proj plan4";
+    }
+    
+    .plantilla-1- { grid-area: plantilla-1-; }
+    
+    .plant2 { grid-area: plant2; }
+    
+    .plant3 { grid-area: plant3; }
+    
+    .plan4 { grid-area: plan4; }
+    
+    .text-proj { grid-area: text-proj; }
+    
+.plantilla-1 img{
+  width: 700px; 
+}
+.plant2 img{
+  width: 500px;
+  margin-bottom: 2%;
+}
+.plant3 img{
+  width: 500px;
+}
+.plan4 img{
+  width: 500px;
+}
+.text-proj {
+  padding: 10%;
+  margin-top: -100%;
+  color: antiquewhite;
+  
+  line-height: 1.6em;
+  font-size: 20px;
+}
+
+
+
+
+  @media (max-width:780px) {
 
     body{
-        margin: 0;
-        padding: 0;
-        
+      margin-top: 20%;
+      
+     margin: auto;
+      overflow-x: hidden;
+      width: auto;
     }
+    
     header{
         flex-wrap: wrap;
-      width:95%;
+      width:auto;
+      
     }
     .la{
         width: 100%;
@@ -538,15 +571,16 @@ footer p{
         margin-top: 1%;
     }
     .la h1{
-        font-size: 57px;
+        font-size: 50px;
         color: antiquewhite;
     }
     .la h2{
-        font-size: 50px;
+        font-size: 45px;
         
     }
    .lb{
-    width: 100%;
+    width: auto;
+    
     
     
    }
@@ -554,22 +588,33 @@ footer p{
     .about{
        margin-top: 10%;
        height: auto;
+       border-radius: 12px;
+       width: auto;
+       
     }
     .about p{
         font-size: 20px;
+
     }
     .bra{
-        
+        width: auto;
         flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        
+        
     }
     .liz  {
-        width: 100%;
+        
         flex-wrap: wrap;
         margin-top: 20%;
+        padding: 2%;
+        
     }
     .liz img{
         width: 120px;
         height: auto;
+        
     }
     .lad{
         width: 100%;
@@ -577,18 +622,19 @@ footer p{
     }
     .lad h2{
       color: antiquewhite;
+      font-size: 50px;
     }
     .lad p{
         text-align: center;
         color: antiquewhite;
-        font-size: 30px;
+        font-size: 25px;
     }
     .icono{
         width: 100%;
         margin-top: 60%;
     }
     .icono svg{
-        width: 55px;
+        width: 50px;
     }
     .fig{
         margin-top: 6%;
@@ -617,6 +663,8 @@ footer p{
         width: 330px;
         
     }
+   
+    
     .project{
       margin-top: 15%;
     }
@@ -634,6 +682,28 @@ footer p{
     }
     .ic img{
         margin-top: 30%;
-        width: 90px;
+        width: 80px;
     }
+    .project-uno{
+              
+      width: 100%;
+      grid-template-columns: minmax(20%,1fr);
+                grid-template-areas:
+                "plantilla-1" "plant2"
+                "plant3"
+                "text-proj" "plan4";
+            }
+            
+           .plantilla-1 img, .plant2 img, .plant3 img, .plan4 img{
+           width: 330px;
+           border-radius: 12px;
+            
+           }
+           .text-proj{
+            margin-top: 10%;
+           }
+            
+
+
   }
+
